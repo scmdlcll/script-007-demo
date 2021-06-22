@@ -1,4 +1,12 @@
-/venv*/
-/.venv*/
 
+
+# python
+__pycache__/
+*.pyc
+
+# virtual environment
+.venv*/
+venv*/
+
+# IDE
 /.idea/
