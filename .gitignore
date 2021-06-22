@@ -10,3 +10,10 @@ venv*/
 
 # IDE
 /.idea/
+
+# Tests
+.pytest_cache/
+
+# Coverage
+htmlcov/
+.coverage

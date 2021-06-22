@@ -14,4 +14,3 @@ def prepare_testfile(request):
     print('prepare_testfile: after test')
     if os.path.exists('testfile.txt'):
         os.remove('testfile.txt')
-
