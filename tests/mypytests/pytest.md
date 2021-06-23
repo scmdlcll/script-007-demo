@@ -3,6 +3,12 @@
 
 https://docs.pytest.org/en/latest/getting-started.html
 
+[Naming conventions](https://docs.pytest.org/en/6.2.x/reference.html#confval-python_classes):
+
+- files matching `test_*.py` and `*_test.py` will be considered test modules
+- class names must start with `Test` and miss the `__init__` method
+- pytest will consider any function prefixed with `test` as a test
+
 # Run tests
 
 Usage:

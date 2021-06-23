@@ -1,8 +1,4 @@
-import os
-
 import pytest
-
-from tests.myfuncs import checkfile
 
 
 @pytest.fixture(scope='function')
