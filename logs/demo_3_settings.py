@@ -7,6 +7,9 @@ dictConfig({
         'default': {
             'format': '[%(asctime)s] %(levelname)s in %(module)s: %(message)s',
         },
+        'to_file': {
+            'format': '!!! [%(asctime)s] %(levelname)s in %(module)s: %(message)s',
+        },
     },
     'handlers': {
         'console': {
@@ -17,9 +20,9 @@ dictConfig({
         },
         'file': {
             'class': 'logging.handlers.RotatingFileHandler',
-            'formatter': 'default',
+            'formatter': 'to_file',
             'filename': 'myapp.log',
-            'maxBytes': 1024 * 1024,
+            'maxBytes': 500,
             'backupCount': 3,
             'level': 'DEBUG',
         },
@@ -30,8 +33,10 @@ dictConfig({
     }
 })
 
+print('started')
 logger = logging.getLogger('myprogram')
 logger.error('example of error message')
-logger.warn('example of warning message')
+logger.warning('example of warning message')
 logger.info('example of information message')
 logger.debug('example of debug message')
+print('finished')

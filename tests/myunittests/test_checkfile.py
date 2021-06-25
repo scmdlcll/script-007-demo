@@ -4,7 +4,7 @@ from unittest import TestCase
 from tests.myfuncs import checkfile
 
 
-class TestMCheckFile(TestCase):
+class TestCheckFile(TestCase):
 
     def setUp(self):
         with open('testfile.txt', 'w') as f:

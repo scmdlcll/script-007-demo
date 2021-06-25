@@ -30,7 +30,7 @@ class TestSuite:
 
     # Test cases
     def testcase3(self, case_explicit):
-        pass
+        print('I like cookies')
 
     def testcase2(self, suite_explicit):
         pass
